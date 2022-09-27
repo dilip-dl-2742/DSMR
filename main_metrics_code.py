@@ -70,9 +70,9 @@ y_input_year = int(y_input_year)
 
 #------------------- RDS Writer Instance CPU Utilization ---------------------
 
-ac_id = ""
-as_key = ""
-a_s_t = ""
+ac_id = "ASIA2O6RQXMLJUYSMEQT"
+as_key = "eV69sqdRujy7FAtCj5kkOc1upwbaMyIIHaz9/I/j"
+a_s_t = "IQoJb3JpZ2luX2VjEFoaCXVzLXdlc3QtMiJHMEUCIQCjjy2AdWtZLY4TAMFWfybZy92iSn58StTNZzv/ulTP8wIgICWOFSjVwKAU7ehU/hHigmTNBIHH4HUviVq4uvoIILwqpQMIExADGgw3MTkzMDk1NTI0MDYiDFETnGqn33aF7c9T5CqCA1gCHzsIsQo0zWgnE6OQKM5WtXCM+n9qzaepdJ9JUUuvQvgFdlbdul6URzQr1ZhtWe6M9VdHyCE5Ukh4OZnnyVrsfyWQhlWnVN2nP+0ANH625tPwGaP4Tn+sswJZtF9GxXCxk7DvQL8JGIGBajESBhoqfcVDxUi6a38B9xmh7UGyMgC7vy/4AkdVJVxN2BI+BxFcuszp0s/rDjBXWmIYyIU9mTZSrbzdgmeScPZAvwuwCh1uBlh0MqCrwgXQIgf/r319o5yDdtWXTyiKNEuNw/Pxb1Lisk9RQ98xEdImKrfnfvh8twfCzmL89q8YUgMeP2x6mJV5gldTwn5m2l7/WiEzb4DoXJ/6bnjm7J/SY4il5aRxPK2LAAPIhZwH2Akgd5vm/UD5S5HRY2fiu2B6b2Fc5P7GK6UWjJlwi75taAVkU4/o331nlptnEnqceQ/LM+BNZFi14xSqGx8P8VUyAqcItsWaBQxV1yMoAOKvYIgzdHpEnuD+88Nsb+CTOq0jiwXBMJWEy5kGOqYB28wSE9IESEkv69o/QNOhLEDqgWoeD9o9bYwEaAKjsn76mdXncU2C+mcCUN9Ssq+/K53cjee98S3/5N324NOnTg460OovArTNqmpCirqMaNms5qI8gfht2gkInPZqGQZ3QtaSdifzqhiGGhL99eRS9CkjUOr/iOtgyPrI9lG3Y0bHByZqC8NfnIrjdFRq1+26LXmGAv5MmVV4vC0v2WAvnrgJHrKgLQ=="
 
 client = boto3.client('cloudwatch',aws_access_key_id = ac_id,aws_secret_access_key = as_key, aws_session_token = a_s_t, region_name='us-west-2')
 
@@ -3845,10 +3845,10 @@ Hi Team, <br><br> Please find the attachment.<br><br>
 
 msg.attach(MIMEText(body, 'html'))
 
-file_path = r"C:\Users\ddoddi\Desktop\Notepad++\New5"
+file_path = r"/PythonCode"
 file_name = 'DSMR.docx'
 
-file = open(file_path+"\\"+file_name, "rb")
+file = open(file_path+"/"+file_name, "rb")
 
 payload = MIMEBase("application", "octet-stream")
 payload.set_payload(file.read())
